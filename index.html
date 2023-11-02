@@ -11,56 +11,183 @@
 
     <!-- Dopo BOOSTRAP collego il mio foglio di stile (NON PRIMA DI BOOTSTRAP!)-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
   <body>
 
     <!-- QUI POTETE INIZIARE IL VOSTRO ESERCIZIO! -->
-      <header>
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand " href="#">
-                    <img src="./img/duck.png" alt="duck" width="50" height="50">
-                  </a>
-              <a class="navbar-brand text-light" href="#">Catalogo Libri</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active text-secondary" aria-current="page" href="#">Anagrafica Utenti</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-secondary" href="#">Storico Prestiti</a>
-                  </li>
-                  
-                  <li class="nav-item">
-                    <a class="nav-link disabled text-secondary">Help</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="Search" placeholder="Cerca..." aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Cerca</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-            
+        <header>
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand " href="#">
+                        <img src="./img/duck.png" alt="duck" width="50" height="50">
+                    </a>
+                    <a class="navbar-brand text-light" href="#">Catalogo Libri</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-secondary" aria-current="page" href="#">Anagrafica Utenti</a>
+                            </li>
 
-
-
-
-
-
-
-        </div>
-
-      </header>
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary" href="#">Storico Prestiti</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link disabled text-secondary">Help</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="Search" placeholder="Cerca..." aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Cerca</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
 
       <main>
 
+        <div class="container">
+
+            <div class="row justify-conten-between mt-5">
+                <div class="col-10">
+                    <h3>Catalogo Libri</h3>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-sm btn-outline-light bg-primary" type="button">Aggiungi Libro</button>
+                </div>
+            </div>
+
+        
+            
+
+
+        </div>
+
+
+        <div class="container p-3 mb-2 text-white"> 
+            <div class="row justify-content-center">
+                <div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Titolo</th>
+                                <th scope="col">Data prestito</th>
+                                <th scope="col">Stato</th>
+                                <th scope="col">Azioni</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">I pilastri della terra</th>
+                                <td>-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td><i class="fa-solid fa-pen border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                    <i class="fa-solid fa-trash border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">I promessi sposi</th>
+                                <td>-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td><i class="fa-solid fa-pen border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                    <i class="fa-solid fa-trash border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Il signore degli anelli</th>
+                                <td>18/10/2023</td>
+                                <td><span class="badge text-bg-warning text-white">In prestito</span></td>
+                                <td><i class="fa-solid fa-pen border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                    <i class="fa-solid fa-trash border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Harry Potter e la pietra filosofale</th>
+                                <td>-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td><i class="fa-solid fa-pen border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                    <i class="fa-solid fa-trash border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Il codice Da Vinci</th>
+                                <td>-</td>
+                                <td><span class="badge text-bg-danger text-white">Non disponibile</span></td>
+                                <td><i class="fa-solid fa-pen border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                    <i class="fa-solid fa-trash border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Shining</th>
+                                <td>-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td><i class="fa-solid fa-pen border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                    <i class="fa-solid fa-trash border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">La divina commedia</th>
+                                <td>21/09/2023</td>
+                                <td><span class="badge text-bg-warning text-white">In prestito</span></td>
+                                <td><i class="fa-solid fa-pen border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                    <i class="fa-solid fa-trash border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Il trono di spade</th>
+                                <td>-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td><i class="fa-solid fa-pen border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                    <i class="fa-solid fa-trash border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Il mondo di Sofia</th>
+                                <td>-</td>
+                                <td><span class="badge text-bg-danger text-white">Non disponibile</span></td>
+                                <td><i class="fa-solid fa-pen border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                    <i class="fa-solid fa-trash border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</th>
+                                <td>25/07/2023</td>
+                                <td><span class="badge text-bg-warning text-white">In prestito</span></td>
+                                <td><i class="fa-solid fa-pen border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                    <i class="fa-solid fa-trash border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Il piccolo principe</th>
+                                <td>-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td><i class="fa-solid fa-pen border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                    <i class="fa-solid fa-trash border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">La storia infinita</th>
+                                <td>-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td><i class="fa-solid fa-pen border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                    <i class="fa-solid fa-trash border border-2 rounded p-1" style="color: rgb(95, 92, 92);"></i>
+                                </td>
+                            </tr>                      
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class=""></div>
 
       </main>
 
