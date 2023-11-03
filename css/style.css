@@ -7,7 +7,10 @@
 footer{
     background-color: rgba(0, 0, 0, 0.9);
     height: 100px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+
 }
+
+.bg-row{
+    background-color: rgb(233, 232, 232);
+}
+
